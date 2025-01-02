@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "next",
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "prettier"
+  ],
+  "globals": {
+    "React": true,
+    "JSX": true
+  },
+  "rules": {
+    "@next/next/no-html-link-for-pages": 0,
+    "@next/next/no-img-element": 0,
+    "import/no-unresolved": 0,
+    "no-unsafe-optional-chaining": 0,
+    "no-unused-vars": 0,
+    "import/order": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "import/named": 0
+  },
+  "env": {
+    "es6": true,
+    "jest": true
+  },
+  "ignorePatterns": ["public", "dist", "node_modules", ".next", "types"],
+  "overrides": [
+    {
+      "files": [
+        "**/*.test.ts",
+        "**/*.test.tsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
